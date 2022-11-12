@@ -1,8 +1,6 @@
 package com.zipcodewilmington.phonebook;
 
-import java.lang.reflect.Array;
 import java.util.*;
-//import java.util.HashMap;
 
 
 /**
@@ -51,8 +49,7 @@ public class PhoneBook {
     }
 
     public List<String> getAllContactNames() {
-        List<String> ls = new ArrayList<>(phonebook.keySet());
-        return ls;
+        return new ArrayList<>(phonebook.keySet());
     }
 
     public Map<String, List<String>> getMap() {
